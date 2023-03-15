@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+#general {
+    width: 100%;
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+    .logo {
+        width: 250px;
+        height: 100px;
+        background-image: url('../img/logo-footer.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -300px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: logo 1s 1;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        overflow: hidden;
+    }
+    @keyframes logo {
+        from{
+            top: -300px;
+        }
+        to{
+            top: 200px;
+        }
+    }
+
+    .ux-ui-logo{
+        width: 101px;
+        height: 100px;
+        background-image: url('../img/uiux.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 38.7%;
+        top: 200px;
+        transform: translateX(-50%);
+        animation: uiux 2s 1;
+        animation-delay: 4.5s;
+        animation-fill-mode: forwards;
+        visibility: hidden;
+    }
+    @keyframes uiux {
+        to{
+            visibility: visible;
+            left: 30%;
+        }
+    }
+
+    .digitalm-logo{
+        width: 101px;
+        height: 100px;
+        background-image: url('../img/digitalmarketing.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 32%;
+        top: 195px;
+        transform: translateX(-50%);
+        animation: digital 2s 1;
+        animation-delay: 4.5s;
+        animation-fill-mode: forwards;
+        visibility: hidden;
+    }
+    @keyframes digital {
+        to{
+            visibility: visible;
+            right: 23.5%;
+        }
+    }
+
+    .programming-logo{
+        width: 101px;
+        height: 100px;
+        background-image: url('../img/programing.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 50%;
+        top:300px;
+        transform: translateX(-50%);
+        animation: programing 2s 1;
+        animation-delay: 4.5s;
+        animation-fill-mode: forwards;
+        visibility: hidden;
+    }
+    @keyframes programing {
+        to{
+            visibility: visible;
+            top: 50%;
+        }
+    }
+}
